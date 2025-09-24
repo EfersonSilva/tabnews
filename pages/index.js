@@ -1,5 +1,9 @@
-function Home() {
-  return <h1>Teste</h1>;
-}
+import { useEffect } from "react";
 
-export default Home;
+export default function Home() {
+  useEffect(() => {
+    window.location.href = "/page.html";
+  }, []);
+
+  return null;
+}
