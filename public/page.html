@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eferson Silva | Backend Developer</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --border: #1f2933;
+      --accent: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    header {
+      margin-bottom: 36px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .tagline {
+      margin-top: 10px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    .card span {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .badge {
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, .15);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, .3);
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Eferson Silva</h1>
+      <p>Backend Developer • .NET • SQL Server • AWS</p>
+      <div class="tagline">Arquitetura limpa • Performance • Sistemas escaláveis</div>
+    </header>
+
+    <section class="section">
+      <h2>Backend & Linguagens</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>C# / .NET</strong>
+          <span>Desenvolvimento backend com foco em regras de negócio, clareza e manutenibilidade.</span>
+        </div>
+        <div class="card">
+          <strong>ASP.NET Core / MVC</strong>
+          <span>APIs REST, aplicações MVC e organização consistente de responsabilidades.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Arquiteturas</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>CQRS</strong>
+          <span>Separação de comandos e consultas para melhorar escalabilidade e leitura.</span>
+        </div>
+        <div class="card">
+          <strong>Arquitetura Hexagonal</strong>
+          <span>Domínio isolado, portas e adaptadores, baixo acoplamento.</span>
+        </div>
+        <div class="card">
+          <strong>Clean Architecture</strong>
+          <span>Separação clara entre domínio, aplicação e infraestrutura.</span>
+        </div>
+        <div class="card">
+          <strong>MVC</strong>
+          <span>Padrão clássico para organização de aplicações web.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Design & Modelagem</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>DDD (Domain-Driven Design)</strong>
+          <span>Modelagem orientada ao domínio e regras de negócio explícitas.</span>
+          <div class="badges">
+            <div class="badge">Entities</div>
+            <div class="badge">Aggregates</div>
+            <div class="badge">Value Objects</div>
+            <div class="badge">Repositories</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Padrões de Projeto</h2>
+      <div class="grid">
+        <div class="card"><strong>Singleton</strong></div>
+        <div class="card"><strong>Mediator</strong></div>
+        <div class="card"><strong>Factory Method</strong></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Banco de Dados</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>SQL Server</strong>
+          <span>Queries complexas, procedures, índices, execution plans e tuning.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Qualidade & Processo</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Testes</strong>
+          <span>Testes unitários e de integração para garantir evolução segura do código.</span>
+        </div>
+        <div class="card">
+          <strong>Clean Code</strong>
+          <span>Código legível, consistente e orientado à manutenção.</span>
+        </div>
+        <div class="card">
+          <strong>Git</strong>
+          <span>Controle de versão, branches e colaboração em equipe.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Cloud & Infra</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>AWS</strong>
+          <span>Experiência com serviços em nuvem, deploy e escalabilidade.</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>Backend focado em sistemas robustos e bem arquitetados</div>
+      <div>Disponível para desafios técnicos</div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
